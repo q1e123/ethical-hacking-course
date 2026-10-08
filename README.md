@@ -30,7 +30,17 @@ Useful flags: `--recreate` rebuilds `.venv` from scratch, `--python 3.11` picks 
 different interpreter, `--verbose` streams the raw command output. See
 `./setup.sh --help`.
 
-> Windows, or prefer to drive it yourself? Follow the manual steps below.
+**Windows (PowerShell)** — same steps, same checks:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\setup.ps1
+.\setup.ps1 -Verify
+```
+
+Flags mirror the bash ones: `-Recreate`, `-Python 3.11`, `-ShowOutput`. See
+`.\setup.ps1 -Help`.
+
+> Prefer to drive it yourself? Follow the manual steps below.
 
 ---
 
