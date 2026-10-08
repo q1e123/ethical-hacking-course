@@ -19,7 +19,7 @@ load_dotenv()
 console = Console()
 client = Groq()
 
-MODEL = "llama-3.3-70b-versatile"
+MODEL = "openai/gpt-oss-120b"
 SYSTEM_PROMPT = (
     "You are a research assistant. When the user gives you a document, "
     "summarize it accurately and concisely. Be helpful and factual."

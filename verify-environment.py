@@ -126,11 +126,11 @@ if groq_key and not groq_key.startswith("your_"):
         from groq import Groq
         client = Groq(api_key=groq_key)
         resp = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
+            model="openai/gpt-oss-120b",
             messages=[{"role": "user", "content": "ping"}],
             max_tokens=1,
         )
-        check("Groq API reachable (llama-3.3-70b-versatile)", True)
+        check("Groq API reachable (openai/gpt-oss-120b)", True)
     except Exception as e:
         check("Groq API reachable", False, detail=str(e))
 else:

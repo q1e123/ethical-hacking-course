@@ -27,7 +27,7 @@ SYSTEM = (
     "Search the knowledge base before answering. Be concise and professional."
 )
 
-MODEL = "llama-3.3-70b-versatile"
+MODEL = "openai/gpt-oss-120b"
 
 
 def _search(query: str, k: int = 3) -> list[Document]:

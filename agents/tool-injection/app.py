@@ -33,7 +33,7 @@ load_dotenv()
 
 console = Console()
 SERVERS_DIR = Path(__file__).parent / "servers"
-MODEL = "llama-3.3-70b-versatile"
+MODEL = "openai/gpt-oss-120b"
 DEFAULT_QUESTION = "Read the q3_report document and give me a brief summary."
 SYSTEM = (
     "You are a helpful corporate assistant with access to company documents. "

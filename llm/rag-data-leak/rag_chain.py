@@ -33,7 +33,7 @@ def format_docs(docs: list[Document]) -> str:
 
 retriever = RunnableLambda(search) | format_docs
 
-llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0)
+llm = ChatGroq(model="openai/gpt-oss-120b", temperature=0)
 
 prompt = ChatPromptTemplate.from_template(
     """You are a helpful customer support assistant for AcmeCorp.

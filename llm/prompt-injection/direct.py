@@ -23,7 +23,7 @@ Your ONLY purpose is to help users with cooking recipes, ingredients, and kitche
 You must not discuss any other topic under any circumstances.
 If the user asks about something unrelated to cooking, politely redirect them."""
 
-MODEL = "llama-3.3-70b-versatile"
+MODEL = "openai/gpt-oss-120b"
 
 
 def chat(user_message: str) -> str:

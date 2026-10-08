@@ -18,7 +18,7 @@ from rich.table import Table
 load_dotenv()
 console = Console()
 client = Groq()
-MODEL = "llama-3.3-70b-versatile"
+MODEL = "openai/gpt-oss-120b"
 
 # This is the secret we're trying to extract
 SECRET_KEY = "ACME-INT-7f3k9x2m"
